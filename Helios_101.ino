@@ -1,11 +1,4 @@
-//**************************************************************
-//  Name    : Simple Arduino Sun Tracking / Heliostat Control Program  
-//  Author  : Phillip Daniel                              
-//  Notes   : Code for controlling Servo based solar machines. Based on code by Gabriel Miller (http://www.cerebralmeltdown.com).      
-//****************************************************************  
-  //////////////////////////////////////////////////  
   //Importing Libraries
-  //////////////////////////////////////////////////  
     #include <avr/pgmspace.h>
     #include <Wire.h>  
     #include <Flash.h>  
@@ -15,9 +8,7 @@
     Helios helios;
     ds3231 clock;
 
-  //////////////////////////////////////////////////  
-  //Declaring Variables - User Input
-  //////////////////////////////////////////////////  
+  //Declaring Variables - User Input 
     //The device will act like a heliostat if this is 1 and a solar panel if this is 0
     int heliostat=0; 
   
@@ -28,10 +19,8 @@
     //Your Heliostat target, with respect to helios's coordinates
     float targetalt = 110;
     float targetaz = 90;
-    
-  //////////////////////////////////////////////////  
+     
   //Declaring Variables
-  //////////////////////////////////////////////////  
     double dAzimuth; //The sun's azimuth angle
     double dElevation; // The sun's elevation/altitude angle
     double offset_Elv=90; //The angular offset to center the Helios's range of motion with the sun's range of motion
